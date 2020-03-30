@@ -1,5 +1,4 @@
-var lines, markov, data1, data2, 
-    x = 360, y = 300;
+var lines, markov, data;
 var lero;
 
 function preload() {
@@ -9,7 +8,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textFont('prompt', 16);
-  textAlign(LEFT);
+  textAlign(CENTER);
 
   lines = ["clique para (re)gerar!"];
 
@@ -27,7 +26,7 @@ function setup() {
 function drawText() {
   background(221, 50, 36);
   fill(240, 238, 243);
-  text(lines.join(' '), x, y, width/2, height/2);
+  text(lines.join(' '), width/4, height/4, width/2, height/2);
   lero = lines.join('');
 }
 
